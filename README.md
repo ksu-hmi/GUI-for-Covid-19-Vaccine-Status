@@ -6,3 +6,5 @@ Input information: patient identifiers: Patient's name and Date of Birth or Lice
 Output: Patient is fully vaccinated (received Booster), Patient is partially vaccinated, patient is not vaccinated. 
 
 This application will use immunization database from doctor's office. Our assumption is that this application will verify patient's vaccine status with the immunization database at doctor's office.
+
+Motivation: To eliminate the question at the time of check-in for any type of visit at any clinic. 
