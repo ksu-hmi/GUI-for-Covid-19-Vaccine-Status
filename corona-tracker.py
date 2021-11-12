@@ -59,7 +59,7 @@ def show_data():
 
 # ================================================= Window Design =========================================================
 master = tk.Tk()
-master.title('Covid-19 country status ')
+master.title('Covid-19 Vaccine status ')
 
 tk.Label(master,text="COVID-19 COUNTRY STATUS" ,padx=50).grid(row=0)
 
