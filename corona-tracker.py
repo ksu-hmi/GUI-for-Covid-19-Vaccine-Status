@@ -11,8 +11,8 @@ def show_data():
     data = covid.Covid()
     country_name = e1.get()
     status = data.get_status_by_country_name(country_name)
-    active = status['active']
-    e2.insert(0,active)
+    Vaccinated = status['Vaccinated']
+    e2.insert(0,list_of_doses_received)
     death = status['deaths']
     e3.insert(0, death)
     confirm = status['confirmed']
@@ -77,7 +77,7 @@ tk.Button(master,
                                                        pady=4)
 
 
-tk.Label(master, text="Active Cases : -").grid(row=8)
+tk.Label(master, text="Vaccinated : -").grid(row=8)
 
 e2 = tk.Entry(master)
 e2.grid(row=8, column=3)
