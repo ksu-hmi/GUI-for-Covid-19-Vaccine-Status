@@ -13,8 +13,8 @@ def show_data():
     status = data.get_status_by_country_name(country_name)
     Vaccinated = status['Vaccinated']
     e2.insert(0,list_of_doses_received)
-    death = status['deaths']
-    e3.insert(0, death)
+    death = status['Partially Vaccinated']
+    e3.insert(0, vaccine_name_with_the_dose_number)
     confirm = status['confirmed']
     e4.insert(0, confirm)
     recover = status['recovered']
@@ -82,7 +82,7 @@ tk.Label(master, text="Vaccinated : -").grid(row=8)
 e2 = tk.Entry(master)
 e2.grid(row=8, column=3)
 
-tk.Label(master, text="Death Cases : -").grid(row=9)
+tk.Label(master, text="Partially Vaccinated : -").grid(row=9)
 e3 = tk.Entry(master)
 e3.grid(row=9, column=3)
 
