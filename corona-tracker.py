@@ -15,8 +15,8 @@ def show_data():
     e2.insert(0,list_of_doses_received)
     death = status['Partially Vaccinated']
     e3.insert(0, vaccine_name_with_the_dose_number)
-    confirm = status['confirmed']
-    e4.insert(0, confirm)
+    confirm = status['Not Vaccinated']
+    e4.insert(0, patient_is_not_vaccinated/need_vaccine)
     recover = status['recovered']
     e5.insert(0, recover)
     print(status)
@@ -86,7 +86,7 @@ tk.Label(master, text="Partially Vaccinated : -").grid(row=9)
 e3 = tk.Entry(master)
 e3.grid(row=9, column=3)
 
-tk.Label(master, text="Confirmed Cases : -").grid(row=10)
+tk.Label(master, text="Not Vaccinated : -").grid(row=10)
 e4 = tk.Entry(master)
 e4.grid(row=10, column=3)
 
