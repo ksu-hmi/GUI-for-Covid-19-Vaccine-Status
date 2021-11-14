@@ -17,12 +17,10 @@ def show_data():
     e3.insert(0, vaccine_name_with_the_dose_number)
     confirm = status['Not Vaccinated']
     e4.insert(0, patient_is_not_vaccinated/need_vaccine)
-    recover = status['recovered']
-    e5.insert(0, recover)
     print(status)
     # intialise data of lists.
     data = {'id': status['id'],
-            'Country': status['country'],
+            'Patient_last_name': status['Patient_last_name'],
             'Confirmed': status['confirmed'],
             'Active': status['active'],
             'Deaths': status['deaths'],
@@ -63,7 +61,7 @@ master.title('Covid-19 Vaccine status ')
 
 tk.Label(master,text="COVID-19 VACCINE STATUS" ,padx=50).grid(row=0)
 
-tk.Label(master, text="Enter your Country name : -").grid(row=2)
+tk.Label(master, text="Enter Patient's Last Name : -").grid(row=2)
 
 e1 = tk.Entry(master)
 
@@ -90,9 +88,6 @@ tk.Label(master, text="Not Vaccinated : -").grid(row=10)
 e4 = tk.Entry(master)
 e4.grid(row=10, column=3)
 
-tk.Label(master, text="Recovered Cases : -").grid(row=11)
-e5 = tk.Entry(master)
-e5.grid(row=11, column=3)
 
 master.mainloop()
 
