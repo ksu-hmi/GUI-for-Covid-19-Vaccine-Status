@@ -75,6 +75,10 @@ tk.Label(master, text="Enter patient's date of Birth : -").grid(row=4)
 
 
 e1 = tk.Entry(master)
+e1.grid(row=4, column=3)
+
+tk.Label(master, text="Enter patient's MRN : -").grid(row=5)
+
 
 
 e1.grid(row=2, column=3)
