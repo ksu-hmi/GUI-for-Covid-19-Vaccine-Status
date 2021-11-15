@@ -63,9 +63,16 @@ tk.Label(master,text="COVID-19 VACCINE STATUS" ,padx=50).grid(row=0)
 
 tk.Label(master, text="Enter Patient's Last Name : -").grid(row=2)
 e1 = tk.Entry(master)
+
 e1.grid(row=2, column=3)
 
 tk.Label(master, text="Enter patient's First name : -").grid(row=3)
+e1 = tk.Entry(master)
+
+e1.grid(row=3, column=3)
+
+tk.Label(master, text="Enter patient's date of Birth : -").grid(row=4)
+
 
 e1 = tk.Entry(master)
 
