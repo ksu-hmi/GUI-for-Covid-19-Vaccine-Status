@@ -81,7 +81,7 @@ tk.Label(master, text="Enter patient's MRN : -").grid(row=5)
 
 
 
-e1.grid(row=2, column=3)
+e1.grid(row=5, column=3)
 
 tk.Button(master,
           text='Show', command=show_data).grid(row=5,
