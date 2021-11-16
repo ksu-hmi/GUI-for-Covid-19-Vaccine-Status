@@ -57,51 +57,52 @@ def show_data():
 
 # ================================================= Window Design =========================================================
 master = tk.Tk()
-master.title('Covid-19 Vaccine status ')
+master.title('Covid-19 vaccine status ')
 
 tk.Label(master,text="COVID-19 VACCINE STATUS" ,padx=50).grid(row=0)
 
-tk.Label(master, text="Enter Patient's Last Name : -").grid(row=2)
-e1 = tk.Entry(master)
+tk.Label(master, text="Enter patient's first name : -").grid(row=2)
 
+e1 = tk.Entry(master)
 e1.grid(row=2, column=3)
 
-tk.Label(master, text="Enter patient's First name : -").grid(row=3)
+tk.Label(master, text="Enter patient's last name : -").grid(row=3)
+
 e1 = tk.Entry(master)
 
 e1.grid(row=3, column=3)
 
 tk.Label(master, text="Enter patient's date of Birth : -").grid(row=4)
 
-
 e1 = tk.Entry(master)
+
 e1.grid(row=4, column=3)
 
 tk.Label(master, text="Enter patient's MRN : -").grid(row=5)
 
-
+e1 = tk.Entry(master)
 
 e1.grid(row=5, column=3)
 
 tk.Button(master,
-          text='Show', command=show_data).grid(row=5,
+          text='Show', command=show_data).grid(row=7,
                                                        column=3,
                                                        sticky=tk.W,
                                                        pady=4)
 
 
-tk.Label(master, text="Vaccinated : -").grid(row=8)
+tk.Label(master, text="Vaccinated : -").grid(row=10)
 
 e2 = tk.Entry(master)
-e2.grid(row=8, column=3)
+e2.grid(row=10, column=3)
 
-tk.Label(master, text="Partially Vaccinated : -").grid(row=9)
+tk.Label(master, text="Partially Vaccinated : -").grid(row=11)
 e3 = tk.Entry(master)
-e3.grid(row=9, column=3)
+e3.grid(row=11, column=3)
 
-tk.Label(master, text="Not Vaccinated : -").grid(row=10)
+tk.Label(master, text="Not Vaccinated : -").grid(row=12)
 e4 = tk.Entry(master)
-e4.grid(row=10, column=3)
+e4.grid(row=12, column=3)
 
 
 master.mainloop()
