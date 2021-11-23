@@ -21,10 +21,10 @@ def show_data():
     # intialise data of lists.
     data = {'id': status['id'],
             'Patient_last_name': status['Patient_last_name'],
-            'Confirmed': status['confirmed'],
-            'Active': status['active'],
-            'Deaths': status['deaths'],
-            'Recovered': status['recovered'],
+            'Patient_last_name': status['Patient_last_name'],
+            'vaccinated': status['receviedbooster'],
+            'partiallyvaccinated': status['partiallyvaccinated'],
+            'notvaccinated': status['notvaccinated'],
             'Latitude': status['latitude'],
             'Longitude': status['longitude'],
             'Last_Updated': status['last_update']
@@ -38,12 +38,12 @@ def show_data():
     cadr = {
 
         key:status[key]
-        for key in status.keys() & {"confirmed","active","deaths","recovered"}
+        for key in status.keys() & {"Received Booster","Partially Vaccinated","Not Vaccinated"}
     }
     n = list(cadr.keys())
     v = list(cadr.values())
-    plt.title("Country")
-    plt.bar(range(len(cadr)),v,tick_label=n,label=('active'))
+    plt.title("Patient Name")
+    plt.bar(range(len(cadr)),v,tick_label=n,label=('Received Booster'))
     plt.xlabel('x-labels')
     plt.ylabel('data')
 
@@ -57,16 +57,18 @@ def show_data():
 
 # ================================================= Window Design =========================================================
 master = tk.Tk()
-master.title('Covid-19 vaccine status ')
+master.title('Covid-19 Vaccine Status ')
 
 tk.Label(master,text="COVID-19 VACCINE STATUS" ,padx=50).grid(row=0)
 
-tk.Label(master, text="Enter patient's first name : -").grid(row=2)
+
+tk.Label(master, text="Enter patient's last name : -").grid(row=2)
 
 e1 = tk.Entry(master)
+
 e1.grid(row=2, column=3)
 
-tk.Label(master, text="Enter patient's last name : -").grid(row=3)
+tk.Label(master, text="Enter patient's first name : -").grid(row=3)
 
 e1 = tk.Entry(master)
 
