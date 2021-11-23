@@ -7,3 +7,4 @@
 8. Edit source code until we get desire output.
 9. Run application and test it's functionality.
 10. Further explore code to make the application more user-friendly.
+11. Crate a database and trying to connect it with GUI.
