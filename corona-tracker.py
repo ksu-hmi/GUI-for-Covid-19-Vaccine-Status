@@ -80,31 +80,33 @@ e1 = tk.Entry(master)
 
 e1.grid(row=4, column=3)
 
+tk.Button(master, text='OR').grid(row=7)
+
 tk.Label(master, text="Enter patient's MRN : -").grid(row=5)
 
 e1 = tk.Entry(master)
 
-e1.grid(row=5, column=3)
+e1.grid(row=7, column=3)
 
 tk.Button(master,
-          text='Show', command=show_data).grid(row=7,
+          text='Show', command=show_data).grid(row=9,
                                                        column=3,
                                                        sticky=tk.W,
                                                        pady=4)
 
 
-tk.Label(master, text="Vaccinated : -").grid(row=10)
+tk.Label(master, text="Vaccinated : -").grid(row=11)
 
 e2 = tk.Entry(master)
-e2.grid(row=10, column=3)
+e2.grid(row=11, column=3)
 
-tk.Label(master, text="Partially Vaccinated : -").grid(row=11)
+tk.Label(master, text="Partially Vaccinated : -").grid(row=12)
 e3 = tk.Entry(master)
-e3.grid(row=11, column=3)
+e3.grid(row=12, column=3)
 
-tk.Label(master, text="Not Vaccinated : -").grid(row=12)
+tk.Label(master, text="Not Vaccinated : -").grid(row=13)
 e4 = tk.Entry(master)
-e4.grid(row=12, column=3)
+e4.grid(row=13, column=3)
 
 
 master.mainloop()
