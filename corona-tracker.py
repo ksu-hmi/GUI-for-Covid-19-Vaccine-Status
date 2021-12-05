@@ -80,9 +80,9 @@ e1 = tk.Entry(master)
 
 e1.grid(row=4, column=3)
 
-tk.Button(master, text='OR').grid(row=7)
+tk.Button(master, text='OR').grid(row=6)
 
-tk.Label(master, text="Enter patient's MRN : -").grid(row=5)
+tk.Label(master, text="Enter patient's MRN : -").grid(row=7)
 
 e1 = tk.Entry(master)
 
